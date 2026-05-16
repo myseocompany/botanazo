@@ -138,7 +138,7 @@ h2,
   min-height: min(76vh, 780px);
   display: grid;
   align-items: end;
-  background: var(--blue);
+  background: url("./assets/images/IMG_5169.webp") center 42% / cover;
   color: var(--masa);
 }
 
@@ -146,7 +146,7 @@ h2,
   position: absolute;
   inset: 0;
   content: "";
-  background: transparent;
+  background: rgba(13, 43, 78, 0.68);
 }
 
 .hero-inner,
