@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;700&family=Bowlby+One&family=Caveat:wght@600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles-v3.css" />
+    <link rel="stylesheet" href="./styles-v6.css" />
     <link rel="icon" type="image/x-icon" href="./assets/favicon_io/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png" />
@@ -28,9 +28,9 @@
           <a href="./menu.html">Menú</a>
           <a href="./tacos-en-armenia.html">Tacos</a>
           <a href="./cocteles.html">Cócteles</a>
-          <a href="./reservas.html">Reservas</a>
           <a href="./contacto.html">Contacto</a>
         </div>
+        <a class="button button-primary nav-cta" href="https://wa.me/573127525143">Reserva</a>
       </nav>
     </header>
 
@@ -44,7 +44,6 @@
           <p>Tacos, burritos, quesadillas y cócteles. Chef mexicano de formación. La única cocina mexicana auténtica del Eje Cafetero.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="./menu.html">Ver el menú</a>
-            <a class="button button-secondary" href="https://wa.me/573127525143">WhatsApp</a>
           </div>
         </div>
       </section>
@@ -55,150 +54,243 @@
         <p class="t-statement-line t-statement-accent">Mesa colombiana.</p>
       </section>
 
-      <!-- INTRO FILOSÓFICA -->
-      <section class="t-intro">
-        <div class="t-intro-inner">
-          <div class="section-kicker">La propuesta</div>
-          <p class="t-intro-text">Botanazo no es el México decorativo de los murales de papel. Es el lugar donde un chef mexicano de formación cocina lo que aprendió desde niño: tortillas de maíz, carnes de cocción lenta, salsas molidas en casa. Sin atajos. En Armenia, Quindío.</p>
+      <!-- EXPERIENCE -->
+      <section class="t-experience">
+        <div class="t-exp-inner">
+          <div class="t-section-head">
+            <div class="section-kicker" style="justify-content:center;">La propuesta</div>
+            <h2>La Experiencia</h2>
+            <div class="section-divider-bar"></div>
+            <p class="t-section-lead">En Botanazo, cada plato es una historia. Chef mexicano de formación, recetas desde niño.</p>
+          </div>
+
+          <div class="t-exp-row">
+            <div class="t-exp-photo">
+              <img src="./assets/images/chilaquiles-mexicanos-botanazo-armenia.jpg" alt="Chilaquiles en Botanazo" />
+            </div>
+            <div class="t-exp-text">
+              <h3>Cocina Auténtica</h3>
+              <p>Botanazo no es el México decorativo de los murales de papel. Es el lugar donde un chef mexicano de formación cocina lo que aprendió desde niño: tortillas de maíz, carnes de cocción lenta, salsas molidas en casa. Sin atajos. En Armenia, Quindío.</p>
+              <ul class="t-exp-list">
+                <li>Tortilla de maíz nixtamalizada, hecha en casa</li>
+                <li>Carnes de cocción lenta de 8+ horas</li>
+                <li>Salsas molidas en casa todos los días</li>
+                <li>El único chef mexicano de formación en el Eje Cafetero</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="t-exp-divider"></div>
+
+          <div class="t-exp-row t-exp-row-rev">
+            <div class="t-exp-text">
+              <h3>El Espacio</h3>
+              <p>Norte de Armenia, barrio Providencia. Un lugar diseñado para que cada rincón cuente: varias zonas instagrameables para que tu visita quede en el feed. Tacos de diario, cenas de semana, cumpleaños y celebraciones. Sin pretensión. Con sazón.</p>
+              <a class="t-feature-cta" href="https://wa.me/573127525143">Reservar por WhatsApp →</a>
+            </div>
+            <div class="t-exp-photo">
+              <img src="./assets/images/restaurante-botanazo-armenia-ambiente.jpg" alt="Zonas instagrameables en Botanazo" />
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- CATEGORY GRID — estilo tarjetas Cucurrucucu -->
-      <section class="t-cat-grid">
-        <article class="t-cat-card t-cat-red">
-          <div>
-            <div class="t-cat-label">01 — Clásicos</div>
-            <h2 class="t-cat-title">Tacos</h2>
-            <p class="t-cat-desc">Pastor, suadero, birria, carnitas, campechano y tripa. Tortilla de maíz hecha en casa. Cebolla, cilantro y salsa de la casa.</p>
+      <!-- MENÚ — 3 tarjetas -->
+      <section class="t-menu-sec">
+        <div class="t-exp-inner">
+          <div class="t-section-head">
+            <div class="section-kicker" style="justify-content:center;">¡Pásele!</div>
+            <h2>Nuestro Menú</h2>
+            <div class="section-divider-bar"></div>
+            <p class="t-section-lead">Selección curada de especialidades mexicanas</p>
           </div>
-          <div class="t-cat-bottom">
-            <a class="t-cat-link" href="./tacos-en-armenia.html">Ver tacos →</a>
-          </div>
-        </article>
 
-        <article class="t-cat-card t-cat-blue">
-          <div>
-            <div class="t-cat-label">02 — Contundentes</div>
-            <h2 class="t-cat-title">Burritos & Quesadillas</h2>
-            <p class="t-cat-desc">Burro especial gratinado con costra de queso. Quesabirria, Maya y mixtas. Guacamole y pico de gallo de la casa.</p>
-          </div>
-          <div class="t-cat-bottom">
-            <a class="t-cat-link" href="./menu.html">Ver menú →</a>
-          </div>
-        </article>
+          <div class="t-menu-cards">
+            <div class="t-menu-card">
+              <div class="t-mcard-head t-mcard-red"><h3>Tacos</h3></div>
+              <div class="t-mcard-body">
+                <div class="t-mcard-item">
+                  <div class="t-mcard-name">Taco al pastor</div>
+                  <p>Cerdo marinado en achiote con piña asada.</p>
+                  <span class="t-mcard-price">$7.000</span>
+                </div>
+                <div class="t-mcard-item">
+                  <div class="t-mcard-name">Taco de birria</div>
+                  <p>Res estofada con chile guajillo. Consomé incluido.</p>
+                  <span class="t-mcard-price">$8.000</span>
+                </div>
+                <div class="t-mcard-item">
+                  <div class="t-mcard-name">Taco suadero</div>
+                  <p>Carne de res de cocción lenta. Clásico taquero.</p>
+                  <span class="t-mcard-price">$8.000</span>
+                </div>
+              </div>
+            </div>
 
-        <article class="t-cat-card t-cat-magenta">
-          <div>
-            <div class="t-cat-label">03 — Pa' bajarlos</div>
-            <h2 class="t-cat-title">Cócteles</h2>
-            <p class="t-cat-desc">Margarita tradicional escarchada con sal o tajín. Micheladas, clamato, aguas frescas y chela fría para acompañar.</p>
-          </div>
-          <div class="t-cat-bottom">
-            <a class="t-cat-link" href="./cocteles.html">Ver cócteles →</a>
-          </div>
-        </article>
-      </section>
+            <div class="t-menu-card">
+              <div class="t-mcard-head t-mcard-blue"><h3>Burritos & Quesadillas</h3></div>
+              <div class="t-mcard-body">
+                <div class="t-mcard-item">
+                  <div class="t-mcard-name">Burro especial</div>
+                  <p>Gratinado, costra de queso, guacamole, pico de gallo y crema agria.</p>
+                  <span class="t-mcard-price">$30.000</span>
+                </div>
+                <div class="t-mcard-item">
+                  <div class="t-mcard-name">Quesabirria</div>
+                  <p>Quesadilla de birria con consomé.</p>
+                  <span class="t-mcard-price">$21.000</span>
+                </div>
+                <div class="t-mcard-item">
+                  <div class="t-mcard-name">Nachos Botanazo</div>
+                  <p>Chorizo, pastor, suadero, queso, frijoles, crema y jalapeños.</p>
+                  <span class="t-mcard-price">$17.000</span>
+                </div>
+              </div>
+            </div>
 
-      <!-- THE BRIEF -->
-      <section class="t-brief">
-        <div class="t-brief-inner">
-          <p class="t-brief-text">
-            El único chef mexicano<br />
-            de formación en Armenia.<br />
-            <em>Sin atajos. Sin decorado.</em>
-          </p>
+            <div class="t-menu-card">
+              <div class="t-mcard-head t-mcard-magenta"><h3>Cócteles</h3></div>
+              <div class="t-mcard-body">
+                <div class="t-mcard-item">
+                  <div class="t-mcard-name">Margarita tradicional</div>
+                  <p>Escarchada con sal o tajín. Limón fresco.</p>
+                  <span class="t-mcard-price">$23.000</span>
+                </div>
+                <div class="t-mcard-item">
+                  <div class="t-mcard-name">Michelada</div>
+                  <p>Chela fría con clamato, limón y sal.</p>
+                  <span class="t-mcard-price">$14.000</span>
+                </div>
+                <div class="t-mcard-item">
+                  <div class="t-mcard-name">Agua fresca</div>
+                  <p>Jamaica, tamarindo o horchata.</p>
+                  <span class="t-mcard-price">$7.000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-menu-note">
+            <p>El menú varía según temporada y disponibilidad de ingredientes frescos.</p>
+            <div class="action-row" style="justify-content:center; margin-top:24px;">
+              <a class="button button-primary" href="./menu.html">Menú completo</a>
+              <a class="button button-secondary" href="https://wa.me/573127525143">Pedir por WhatsApp</a>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- FEATURES — La cocina / El espacio / La reserva -->
-      <section class="t-features">
-        <div class="t-feature">
-          <div class="t-feature-num">01</div>
-          <h3 class="t-feature-title">La cocina</h3>
-          <p>Chef formado en México. Recetas originales, no adaptadas. Masa nixtamalizada, carnes de cocción lenta de 8 horas, salsas molidas en casa todos los días.</p>
-        </div>
-        <div class="t-feature">
-          <div class="t-feature-num">02</div>
-          <h3 class="t-feature-title">El espacio</h3>
-          <p>Norte de Armenia, barrio Providencia. Una mesa para tacos de diario, cenas de semana, cumpleaños y celebraciones. Sin pretensión. Con sazón.</p>
-        </div>
-        <div class="t-feature">
-          <div class="t-feature-num">03</div>
-          <h3 class="t-feature-title">La reserva</h3>
-          <p>Por WhatsApp o llegando directo. Sin formularios, sin plataformas. ¡Pásele, que hay mesa!</p>
-          <a class="t-feature-cta" href="https://wa.me/573127525143">Reservar por WhatsApp →</a>
-        </div>
-      </section>
-
-      <!-- GALERÍA 2x2 -->
+      <!-- GALERÍA -->
       <section class="t-gallery">
-        <img src="./assets/images/IMG_5272.webp" alt="Plato mexicano servido en Botanazo" />
-        <img src="./assets/images/IMG_5109.webp" alt="Antojito de Botanazo" />
-        <img src="./assets/images/IMG_5180.webp" alt="Quesadilla servida en Botanazo" />
-        <img src="./assets/images/IMG_5333.webp" alt="Cóctel servido en Botanazo" />
-      </section>
-
-      <!-- MENÚ HIGHLIGHTS — banda azul cobalto -->
-      <section class="band band-blue">
-        <div class="section">
-          <div class="section-kicker">¡Pásele!</div>
-          <h2>Para empezar</h2>
-          <p class="chef-note">¿Primera vez? Pide pastor y birria.</p>
-          <div class="menu-grid">
-            <article class="menu-card">
-              <div class="menu-title">Taco al pastor</div>
-              <div class="price">$7.000</div>
-              <p class="menu-desc">Cerdo marinado en achiote y un trozo de piña asada.</p>
-            </article>
-            <article class="menu-card">
-              <div class="menu-title">Quesabirria</div>
-              <div class="price">$21.000</div>
-              <p class="menu-desc">Quesadilla de birria con opción acompañada de consomé.</p>
-            </article>
-            <article class="menu-card">
-              <div class="menu-title">Burro especial</div>
-              <div class="price">$30.000</div>
-              <p class="menu-desc">Gratinado, costra de queso, guacamole, pico de gallo y crema agria.</p>
-            </article>
-            <article class="menu-card">
-              <div class="menu-title">Nachos Botanazo</div>
-              <div class="price">$17.000</div>
-              <p class="menu-desc">Chorizo con pastor y suadero, queso, frijoles, crema y jalapeños.</p>
-            </article>
-            <article class="menu-card">
-              <div class="menu-title">Chilaquiles</div>
-              <div class="price">$31.000</div>
-              <p class="menu-desc">Totopos, salsa roja, crema, queso, huevo y carne.</p>
-            </article>
-            <article class="menu-card">
-              <div class="menu-title">Margarita tradicional</div>
-              <div class="price">$23.000</div>
-              <p class="menu-desc">Escarchada con sal o tajín.</p>
-            </article>
+        <div class="t-gallery-inner">
+          <div class="t-section-head t-section-head-dark">
+            <h2>Galería de Sabores</h2>
+            <div class="section-divider-bar"></div>
           </div>
-          <div class="action-row">
-            <a class="button button-primary" href="./menu.html">Menú completo</a>
-            <a class="button button-secondary" href="https://wa.me/573127525143">Pedir por WhatsApp</a>
+          <div class="t-gallery-grid">
+            <div class="gallery-item">
+              <img src="./assets/images/nachos-mexicanos-botanazo-armenia.jpg" alt="Nachos servidos en Botanazo" />
+              <div class="gallery-overlay">
+                <p class="gallery-overlay-title">Nachos</p>
+                <p class="gallery-overlay-desc">Crujientes, abundantes y para compartir</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/images/tortilla-maiz-nixtamalizada-botanazo.jpg" alt="Tortilla de maíz en Botanazo" />
+              <div class="gallery-overlay">
+                <p class="gallery-overlay-title">Tortilla de Maíz</p>
+                <p class="gallery-overlay-desc">Hecha en casa, nixtamalizada</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/images/elote-mexicano-botanazo-armenia.jpg" alt="Elote servido en Botanazo" />
+              <div class="gallery-overlay">
+                <p class="gallery-overlay-title">Elote</p>
+                <p class="gallery-overlay-desc">Maíz preparado al estilo mexicano</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/images/cocteles-mexicanos-botanazo-armenia.jpg" alt="Cóctel servido en Botanazo" />
+              <div class="gallery-overlay">
+                <p class="gallery-overlay-title">Cócteles</p>
+                <p class="gallery-overlay-desc">Margaritas y más</p>
+              </div>
+            </div>
+          </div>
+          <div class="t-gallery-cta">
+            <p>Descubre más de nuestras creaciones culinarias</p>
+            <a class="button button-primary" href="https://wa.me/573127525143">Haz tu Reserva</a>
           </div>
         </div>
       </section>
 
-      <!-- INFO PRÁCTICA -->
-      <section class="t-info">
-        <div class="t-info-inner">
-          <div class="t-info-block">
-            <div class="section-kicker">Dónde estamos</div>
-            <p class="t-info-address">Cl. 10 Nte. #14-65<br />B/Providencia<br />Armenia, Quindío</p>
+      <!-- CONTACTO -->
+      <section class="t-contact">
+        <div class="t-exp-inner">
+          <div class="t-section-head">
+            <h2>Contacto & Reservas</h2>
+            <div class="section-divider-bar"></div>
           </div>
-          <div class="t-info-block">
-            <div class="section-kicker">Horarios</div>
-            <p>Martes a domingo<br />12:00 pm — 9:00 pm</p>
-            <p style="color: var(--muted); font-size: 14px; margin-top: 8px;">Lunes cerrado</p>
-          </div>
-          <div class="t-info-block">
-            <div class="section-kicker">Contacto</div>
-            <p><a href="https://wa.me/573127525143">+57 312 752 5143</a></p>
-            <a class="t-info-cta" href="https://wa.me/573127525143">Escribirnos por WhatsApp</a>
+
+          <div class="t-contact-grid">
+            <div class="t-contact-info">
+              <div class="t-info-block">
+                <div class="t-info-icon t-info-icon-red"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                <div>
+                  <div class="section-kicker">Dónde estamos</div>
+                  <p class="t-info-address">Cl. 10 Nte. #14-65<br />B/Providencia<br />Armenia, Quindío</p>
+                </div>
+              </div>
+              <div class="t-info-block">
+                <div class="t-info-icon t-info-icon-turquesa"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                <div>
+                  <div class="section-kicker">Horarios</div>
+                  <p>Martes a domingo · 12:00 pm — 9:00 pm</p>
+                  <p style="color: var(--muted); font-size: 14px; margin-top: 4px;">Lunes cerrado</p>
+                </div>
+              </div>
+              <div class="t-info-block">
+                <div class="t-info-icon t-info-icon-achiote"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+                <div>
+                  <div class="section-kicker">Contacto</div>
+                  <p><a href="https://wa.me/573127525143">+57 312 752 5143</a></p>
+                </div>
+              </div>
+              <div class="t-contact-social">
+                <a href="https://www.instagram.com/botanazoaxm/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://wa.me/573127525143" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              </div>
+            </div>
+
+            <div class="t-contact-form-box">
+              <h3 class="t-res-title">Haz tu Reserva</h3>
+              <div class="t-res-form">
+                <div class="form-group">
+                  <label class="form-label">Nombre</label>
+                  <input class="form-input" type="text" placeholder="Tu nombre" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Teléfono</label>
+                  <input class="form-input" type="tel" placeholder="+57 300 000 0000" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Fecha de reserva</label>
+                  <input class="form-input" type="date" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Número de personas</label>
+                  <select class="form-input">
+                    <option>Selecciona</option>
+                    <option>1 Persona</option>
+                    <option>2 Personas</option>
+                    <option>3 Personas</option>
+                    <option>4 Personas</option>
+                    <option>5+ Personas</option>
+                  </select>
+                </div>
+                <a class="button button-primary t-res-submit" href="https://wa.me/573127525143">Reservar por WhatsApp</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -210,13 +302,42 @@
       <div class="footer-inner">
         <div>
           <img class="footer-brand" src="./assets/images/logo-botanazo-h.png" alt="Botanazo Gastronomia Mexicana" />
-          <p>Restaurante mexicano artesanal en Armenia, Quindío.</p>
-          <p>Cl. 10 Nte. #14-65, B/Providencia, Armenia, Quindío, Colombia.</p>
+          <p>Gastronomía Mexicana Artesanal.<br />La única cocina mexicana auténtica del Eje Cafetero.</p>
         </div>
         <div>
-          <p><a href="./menu.html">Menú</a></p>
-          <p><a href="./reservas.html">Reservas</a></p>
-          <p><a href="./contacto.html">Contacto</a></p>
+          <h4 class="footer-heading">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="./menu.html">Menú</a></li>
+            <li><a href="./tacos-en-armenia.html">Tacos</a></li>
+            <li><a href="./cocteles.html">Cócteles</a></li>
+            <li></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Contacto</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/573127525143">+57 312 752 5143</a></li>
+            <li>Cl. 10 Nte. #14-65</li>
+            <li>B/Providencia</li>
+            <li>Armenia, Quindío</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Horarios</h4>
+          <ul class="footer-links">
+            <li>Mar — Dom: 12pm — 9pm</li>
+            <li>Lunes: Cerrado</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <p>© 2026 Botanazo. Todos los derechos reservados.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/botanazoaxm/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://wa.me/573127525143" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
         </div>
       </div>
     </footer>
