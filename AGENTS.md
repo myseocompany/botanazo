@@ -135,3 +135,11 @@ La web debe responder de forma **explícita** (sin que un LLM tenga que inferir)
 - Las fotos en `assets/tomas/fotos/jpg/` son las aptas para la web (ya convertidas a JPG).
 - El tono del copy debe ser **cálido, local y directo** — nunca genérico ni caricaturesco.
 - Priorizar frases SEO claras sobre frases de marketing vacías.
+
+---
+
+## CSS y cache busting
+
+El sitio no usa build tools ni versioning automático. Para forzar que los navegadores recarguen el CSS después de cambios, se renombra el archivo manualmente (ej. `styles-v2.css` → `styles-v3.css`) y se actualiza la referencia en todos los HTMLs de `public/`.
+
+**Regla:** cada vez que se modifique el CSS, incrementar el número de versión del archivo y actualizar los 10 HTMLs antes de hacer deploy.
