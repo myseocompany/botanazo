@@ -113,6 +113,9 @@ h2,
   background: transparent;
   color: var(--red);
   font: inherit;
+  padding: 8px;
+  cursor: pointer;
+  line-height: 0;
 }
 
 .button {
