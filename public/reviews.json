@@ -1,0 +1,23 @@
+[
+  {
+    "author": "David Prada Forero",
+    "text": "Todas las comidas que he comido han sido deliciosas. Muy buen sabor, ambiente y servicio.",
+    "rating": 5,
+    "publishedAt": "2026-05-08",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Botanazo&query_place_id=ChIJZX71Mf31OI4R6OofU4Xwqgk"
+  },
+  {
+    "author": "Jose M. Zacarias",
+    "text": "Soy de México y este lugar mexicano tiene el sazón de mi país, delicioso y con porciones adecuadas.",
+    "rating": 5,
+    "publishedAt": "2026-03-20",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Botanazo&query_place_id=ChIJZX71Mf31OI4R6OofU4Xwqgk"
+  },
+  {
+    "author": "DANN KU",
+    "text": "Pedimos el burro especial y dorielote, el servicio fue excelente y el ambiente muy tranquilo.",
+    "rating": 5,
+    "publishedAt": "2026-01-13",
+    "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Botanazo&query_place_id=ChIJZX71Mf31OI4R6OofU4Xwqgk"
+  }
+]
