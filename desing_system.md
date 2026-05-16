@@ -1,4 +1,4 @@
-# Botanazo — Sistema de Diseño
+# Botanazo — Sistema de Diseño v2
 
 **Gastronomía Mexicana Auténtica**  
 Cl. 10 Nte. #14-65, B/Providencia, Armenia, Quindío, Colombia  
@@ -33,29 +33,49 @@ No somos una experiencia instagrameable de "México decorativo". Somos el lugar 
 
 ## 03. Paleta de Color
 
+> **Referente visual:** Cucurrucucu Mexican Cantina — Marguva Casa de Diseño, Mérida 2020.  
+> Los colores de Botanazo son de fiesta, artesanía y folclore mexicano. Nunca tierra, nunca apagados.
+
 ### Colores Primarios (80%)
 
 | Color | Hex | Uso | Proporción |
 |-------|-----|-----|-----------|
-| Rojo cantina | `#B71C1C` | Primario, botones, énfasis, rótulos | 60% |
-| Azul talavera | `#0D2B4E` | Secundario, fondos, líneas, estructura | 20% |
-| Masa | `#F4E3CC` | Fondo principal, contraste claro | 20% |
+| Chile rojo | `#E53935` | Primario, botones, énfasis, rótulos | 50% |
+| Azul cobalto | `#1A3FC4` | Secundario, fondos oscuros, estructura | 20% |
+| Crema viva | `#FFFBF0` | Fondo principal, contraste claro | 30% |
 
-### Acentos (máximo 20%)
+### Acentos (máximo 20% por pieza)
 
 | Color | Hex | Uso |
 |-------|-----|-----|
-| Achiote | `#F39200` | Énfasis cálido, call-to-action secundario |
-| Tomatillo | `#4A7C2A` | Naturales, orgánico, ingredientes |
-| Guajillo | `#6B1E1E` | Fondos sombríos, profundidad, noche |
-| Carbón | `#1A1A1A` | Texto principal, estructura |
+| Magenta fiesta | `#D81B60` | Acento estrella: CTAs secundarios, bandas de impacto, exclamaciones |
+| Cempasúchil | `#FFC107` | Kickers, highlights, texto sobre fondos oscuros |
+| Turquesa cantina | `#00897B` | Refrescos, bebidas, notas del chef, detalles vivos |
+| Morado talavera | `#6A3BA8` | Piezas especiales, eventos, noche |
+| Carbón | `#111111` | Texto principal sobre fondos claros |
+| Rojo profundo | `#8B0000` | Fondos muy oscuros, footer, noche |
+
+### Por qué cambiamos la paleta anterior
+
+| Antes | Problema | Ahora |
+|-------|----------|-------|
+| Rojo `#B71C1C` | Opaco, corporativo | Chile rojo `#E53935` — vivo, cantina |
+| Azul navy `#0D2B4E` | Demasiado oscuro y formal | Azul cobalto `#1A3FC4` — folclórico, talavera |
+| Masa `#F4E3CC` | Tierra apagada, sin energía | Crema viva `#FFFBF0` — limpio, contrasta fuerte |
+| Achiote `#F39200` | Correcto pero sin punch | Cempasúchil `#FFC107` — solar, festivo |
+| Sin magenta | Le faltaba el color del folclore | Magenta fiesta `#D81B60` — la firma de la cantina |
 
 ### Reglas de Color
 
 - **Máximo 3 colores por pieza.** Nunca todos juntos.
-- **Combinaciones válidas:** Rojo + Masa, Azul + Achiote, Masa + Carbón, Rojo + Azul + Masa.
-- **Nunca:** Rojo + Rosa, todos los acentos juntos, gradientes, desaturación.
-- **Propósito:** La paleta debe leer como "México cantina real", no como "decoración barata".
+- **Combinaciones válidas:**
+  - Chile rojo + Crema viva (estándar de marca)
+  - Azul cobalto + Cempasúchil (noche, tequila, bebidas)
+  - Magenta + Crema viva (bandas de impacto, exclamaciones)
+  - Chile rojo + Azul cobalto + Crema viva (logo, menú)
+  - Morado talavera + Cempasúchil (eventos, especiales)
+- **Nunca:** tierra, beige apagado, gradientes, colores desaturados, más de 3 colores.
+- **Fondo base en web:** Crema viva `#FFFBF0`. Nunca gris, nunca tierra.
 
 ---
 
@@ -64,15 +84,15 @@ No somos una experiencia instagrameable de "México decorativo". Somos el lugar 
 ### A. Display — Bowlby One
 
 - **Peso:** 400 (regular)
-- **Tamaño:** 56–96px (en web), escalar según contexto
-- **Usos:** Logo, titulares enormes, frases de cantina ("¡PÁSELE!"), gritos y llamados grandes
+- **Tamaño:** 56–160px en web, escalar según contexto
+- **Usos:** Logo, titulares enormes, frases de cantina ("¡PÁSELE!"), gritos y llamados grandes, bandas de impacto
 - **Características:** Redondeada, vernácula, simula letra pintada a mano sobre muro
 - **Nunca:** Itálica, ligera, condensada, en párrafos largos
 
 ### B. Sub-display — Anton
 
 - **Peso:** 400 (regular)
-- **Tamaño:** 20–40px
+- **Tamaño:** 20–44px
 - **Usos:** Nombres de plato, títulos de sección, subtítulos en menú
 - **Características:** Condensada, pesada, alta energía, directa
 - **Nunca:** En cuerpo, en descripciones, en menor a 18px
@@ -87,9 +107,9 @@ No somos una experiencia instagrameable de "México decorativo". Somos el lugar 
 
 ### D. Mano — Caveat
 
-- **Peso:** 600 (solo disponible)
+- **Peso:** 600
 - **Tamaño:** 18–32px
-- **Usos:** Pizarra, post-it digitales, "del día", notas personalizadas del chef, destacados en redes
+- **Usos:** Notas del chef, "del día", pizarra, post-it digitales, acentos editoriales
 - **Características:** Manuscrita, cálida, íntima, manual
 - **Nunca:** En textos largos, en menú impreso normal, en botones
 
@@ -100,25 +120,26 @@ No somos una experiencia instagrameable de "México decorativo". Somos el lugar 
 ### Versión Principal
 
 ```
-BOTANAZO (Bowlby One, 96px, rojo #B71C1C)
-— línea azul — Gastronomía Mexicana — línea azul —
-(Anton, 12px, azul #0D2B4E, tracking abierto)
+BOTANAZO (Bowlby One, 96px, Chile rojo #E53935)
+— línea azul cobalto — Gastronomía Mexicana — línea azul cobalto —
+(Anton, 12px, azul cobalto #1A3FC4, tracking abierto)
 ```
 
-Fondo: Masa #F4E3CC
+Fondo: Crema viva `#FFFBF0`
 
 ### Variantes
 
 | Variante | Fondo | Texto | Uso |
 |----------|-------|-------|-----|
-| Principal | Masa | Rojo | Estándar, menú, web |
-| Inversa rojo | Rojo | Masa | Botones, énfasis |
-| Inversa azul | Azul | Achiote | Fondos oscuros |
+| Principal | Crema viva | Chile rojo | Estándar, menú, web |
+| Inversa rojo | Chile rojo | Crema viva | Botones, énfasis, bandas |
+| Inversa cobalto | Azul cobalto | Cempasúchil | Fondos oscuros, noche |
+| Inversa magenta | Magenta fiesta | Crema viva | Piezas especiales, eventos |
 | Monocromo | Blanco | Carbón | Impresión BN, tickets |
 
 ### Espaciado Mínimo
 
-- 20px de espacio vacío alrededor del logo (nunca tocando bordes)
+- 20px de espacio vacío alrededor del logo
 - Logo no se escala menor a 80px de ancho en web
 
 ---
@@ -129,12 +150,12 @@ Una frase por pieza. Máximo una exclamación. Tipografía Bowlby One mayúscula
 
 | Frase | Fondo | Texto | Contexto |
 |-------|-------|-------|----------|
-| ¡Pásele! | Rojo #B71C1C | Masa #F4E3CC | Bienvenida, entrada, CTA principal |
-| ¡Échele, compa! | Azul #0D2B4E | Achiote #F39200 | Énfasis, animación, "vamos" |
-| Una no es ninguna | Achiote #F39200 | Azul #0D2B4E | Cerveza, chela, happy hour |
-| Pa' la chela | Tomatillo #4A7C2A | Masa #F4E3CC | Bebidas, refrescos, agua fresca |
-| ¡Salud, cabrón! | Masa #F4E3CC | Rojo #B71C1C | Brindis, celebración, cierre |
-| La botana | Guajillo #6B1E1E | Achiote #F39200 | Antojitos, extras, complementos |
+| ¡Pásele! | Chile rojo `#E53935` | Crema viva `#FFFBF0` | Bienvenida, entrada, CTA principal |
+| ¡Échele, compa! | Azul cobalto `#1A3FC4` | Cempasúchil `#FFC107` | Énfasis, animación, "vamos" |
+| Una no es ninguna | Cempasúchil `#FFC107` | Azul cobalto `#1A3FC4` | Cerveza, chela, happy hour |
+| Pa' la chela | Turquesa cantina `#00897B` | Crema viva `#FFFBF0` | Bebidas, refrescos, agua fresca |
+| ¡Salud, cabrón! | Magenta fiesta `#D81B60` | Crema viva `#FFFBF0` | Brindis, celebración, cierre |
+| La botana | Morado talavera `#6A3BA8` | Cempasúchil `#FFC107` | Antojitos, extras, complementos |
 
 ---
 
@@ -143,56 +164,65 @@ Una frase por pieza. Máximo una exclamación. Tipografía Bowlby One mayúscula
 ### Botones
 
 **Botón Primario (CTA Principal)**
-- Fondo: Rojo #B71C1C
-- Texto: Masa #F4E3CC, Anton 16px, mayúsculas, tracking +0.06em
+- Fondo: Chile rojo `#E53935`
+- Texto: Crema viva `#FFFBF0`, Anton 16px, mayúsculas, tracking +0.06em
 - Padding: 14px 28px
 - Border-radius: 4px
 - Ejemplo: "Ver el menú", "Pedir por WhatsApp"
 
 **Botón Secundario**
 - Fondo: Transparente
-- Borde: 2px sólido Rojo #B71C1C
-- Texto: Rojo #B71C1C, Anton 16px, mayúsculas
+- Borde: 2px sólido Chile rojo `#E53935`
+- Texto: Chile rojo `#E53935`, Anton 16px, mayúsculas
 - Padding: 12px 26px
 - Border-radius: 4px
 
 **Botón Terciario**
-- Fondo: Masa #F4E3CC
-- Texto: Rojo #B71C1C, Anton 14px
-- Sin borde
-- Padding: 10px 20px
+- Fondo: Crema viva `#FFFBF0`
+- Texto: Chile rojo `#E53935`, Anton 14px
+- Sin borde, padding: 10px 20px
 
 ### Card — Plato de Menú
 
 ```
 ┌─────────────────────────────────┐
 │ TACO AL PASTOR (Anton 22px)     │  $7.000
-│ Cerdo marinado, piña asada...   │ (monospace, rojo)
-│ (Archivo 13px, gris)            │
+│ Cerdo marinado, piña asada...   │ (monospace, chile rojo)
+│ (Archivo 13px, carbón 50%)      │
 └─────────────────────────────────┘
 ```
 
-- Fondo: Blanco
-- Borde: 0.5px #B4B2A9
-- Border-radius: 8px
-- Padding: 1rem 1.25rem
-- Nombre: Anton 22px mayúsculas
-- Descripción: Archivo 13px color #5F5E5A
-- Precio: Monospace 15px bold color #B71C1C, alineado a la derecha
+- Fondo: Blanco `#FFFFFF`
+- Borde: 1px `#DDDDDD`, borde izquierdo 4px Chile rojo `#E53935`
+- Border-radius: 8px, padding: 1rem 1.25rem
+- Nombre: Anton 22px mayúsculas, Carbón `#111111`
+- Descripción: Archivo 13px, color `#666`
+- Precio: monospace 15px bold, Chile rojo `#E53935`
 - Nunca: foto dentro de la card
 
 ### Línea divisora de sección
 
 - Grosor: 2px
-- Color: Rojo #B71C1C o Azul #0D2B4E
-- Estilo: sólido
-- Ancho: 100% del contenedor
+- Color: Chile rojo `#E53935` o Azul cobalto `#1A3FC4`
+- Estilo: sólido, ancho 100% del contenedor
 
-### Fondo de sección
+### Section kicker (etiqueta de sección)
 
-- Principal: Masa #F4E3CC o Blanco
-- Alternado: Azul #0D2B4E (máximo oscuro)
-- Nunca: texturas, patrones, gradientes
+- Tipografía: Anton, 13px, mayúsculas, tracking +0.12em
+- Color: Cempasúchil `#FFC107`
+- Decoración: línea de 28px a cada lado, mismo color
+- Nunca en texto body, nunca sin las líneas laterales
+
+### Bandas de fondo
+
+| Banda | Fondo | Texto | Uso |
+|-------|-------|-------|-----|
+| Default | Crema viva `#FFFBF0` | Carbón `#111111` | Secciones normales |
+| White | Blanco `#FFFFFF` | Carbón `#111111` | Contraste con default |
+| Cobalto | Azul cobalto `#1A3FC4` | Crema viva / Cempasúchil | Menú, bebidas, noche |
+| Shout rojo | Chile rojo `#E53935` | Crema viva `#FFFBF0` | ¡PÁSELE!, CTA gigante |
+| Shout magenta | Magenta fiesta `#D81B60` | Crema viva `#FFFBF0` | Eventos, celebraciones |
+| Nunca | Beige, tierra, gris, degradado | — | — |
 
 ---
 
@@ -200,29 +230,27 @@ Una frase por pieza. Máximo una exclamación. Tipografía Bowlby One mayúscula
 
 ### Estilo
 
-- **Luz:** Natural preferentemente. Si de noche (hora de apertura), una sola lámpara cálida lateral.
+- **Luz:** Natural preferentemente. Si de noche, una sola lámpara cálida lateral.
 - **Ángulo:** Cenital (90°) o 3/4 (45°)
 - **Plano:** Cerrado en el plato o ingrediente. Sin manos visibles del chef.
-- **Fondo:** Limpio. Tabla de madera, servilleta blanca, mantel kraft. Nunca: mantel vichy rojo, muro de canastos, decoración de fondo.
+- **Fondo:** Limpio. Tabla de madera oscura, servilleta blanca, mantel kraft.
 - **Composición:** Plato en tercios, comida como protagonista absoluto.
 
 ### Edición
 
-- Subir brillo +15%
-- Bajar sombras −10%
+- Subir brillo +15%, bajar sombras −10%
 - Balance de blancos: Corregir
 - Saturación: Normal (sin oversaturar)
 - Contraste: +5% máximo
-- Filtros: Ninguno. App: Lightroom Mobile (gratuita).
+- Filtros: Ninguno. App: Lightroom Mobile.
 
 ### NO hacer
 
-- Fotos con bolsas de Doritos o marcas visibles
+- Fotos con bolsas de marcas visibles
 - Plano lejano mostrando todo el local
 - Manos de personas (incluyendo chef)
-- Múltiples platos en una sola foto (confunde)
-- Luz de flash directo
-- Fondos con mucho detalle atrás
+- Múltiples platos en una sola foto
+- Luz de flash directo o fondos con mucho detalle
 
 ---
 
@@ -230,16 +258,18 @@ Una frase por pieza. Máximo una exclamación. Tipografía Bowlby One mayúscula
 
 ### ✓ Sí
 
-- Fondo plano de la paleta (nunca degradado)
+- Colores saturados, vivos, a full — como en el folclore mexicano
+- Fondo sólido de la paleta (nunca degradado)
 - Una sola tipografía display por pieza
-- Frases cortas: máximo 5 palabras
+- Frases cortas: máximo 5 palabras en display
 - Fotos cenitales con luz natural
-- Mexicanismos del chef ("compa", "echale", "pa'")
-- Blanco como respiro (whitespace generoso)
-- Colores sólidos, bordes limpios
+- Mexicanismos del chef ("compa", "échale", "pa'")
+- Whitespace generoso
+- Magenta para piezas de alto impacto
 
 ### ✗ No
 
+- Colores tierra, apagados, desaturados, beige
 - Gradientes, sombras, blur, glow, efectos neón
 - Mezclar 4+ colores en una pieza
 - Fotos con gente comiendo, haciendo mueca, sonriendo forzado
@@ -256,28 +286,22 @@ Una frase por pieza. Máximo una exclamación. Tipografía Bowlby One mayúscula
 ```
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃  TACOS                            ┃
-┃  (Anton 36px rojo, con línea)     ┃
+┃  (Anton 36px chile rojo, línea)   ┃
 ┃  llevan cebolla · cilantro        ┃
-┃  (Archivo 11px gris, tracking +)  ┃
+┃  (Archivo 11px carbón, tracking+) ┃
 ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
 ┃                                   ┃
-┃  TACO AL PASTOR                   ┃ $7.000
+┃  TACO AL PASTOR           $7.000  ┃
 ┃  Cerdo marinado, piña asada.      ┃
 ┃  .................................┃
-┃                                   ┃
-┃  SUADERO                          ┃ $7.000
-┃  Res confitada lentamente.        ┃
-┃  .................................┃
-┃                                   ┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┃                                   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 ```
 
 - Cada sección en página separada (máximo 5 platos por página)
-- Línea punteada entre nombre y precio (conecta visualmente)
+- Línea punteada entre nombre y precio
 - Nota al pie en Caveat: "¡Pregunta por el del día!"
 - Material: Kraft o papel mate blanco, 100 gsm mínimo
-- Tipografía: Sin serifa para body (Archivo), display para títulos
-- Color: Solo 2 tintas máximo (rojo + negro, o azul + negro)
+- Color: 2 tintas (chile rojo + carbón, o azul cobalto + carbón)
 
 ---
 
@@ -285,39 +309,27 @@ Una frase por pieza. Máximo una exclamación. Tipografía Bowlby One mayúscula
 
 ### Story Template
 
-- Fondo: Color de la paleta (rotativo)
+- Fondo: Color saturado de la paleta (rojo, magenta, cobalto, cempasúchil)
 - Texto: Bowlby One o Anton, máximo 3 líneas
 - CTA: "¡Pásele!" o "Pa' la chela"
-- Duración: 24 horas
 
 ### Feed Post
 
 - Foto del plato cenital (nunca persona)
 - Caption en Archivo 14px
 - Hashtag local: #ArmeniaTaquería #ComidaMexicanaArmenia #CocinaMexicana
-- Emoji máximo 1 (no decorar, solo señal)
-- Ejemplo caption:
-  ```
-  Taco al pastor. Cerdo marinado en achiote, piña asada.
-  La receta del chef desde Jalisco.
-  
-  ¡Pásele!
-  ```
+- Emoji máximo 1
 
 ### Reel
 
 - Plano cerrado a las manos del chef cocinando (sin cara visible)
-- Música mexicana de fondo (norteño, ranchera, banda)
+- Música mexicana: norteño, ranchera, banda
 - Duración: 15–30 segundos
-- Texto overlay: Una frase de exclamación en Bowlby One
+- Texto overlay: Una frase en Bowlby One
 
 ---
 
 ## 12. Handoff a Claude Design / LLMs
-
-### Instrucción de Onboarding
-
-Copia y pega este bloque exacto en Claude Design durante el setup de sistema de diseño:
 
 ```
 MARCA: Botanazo — Gastronomía Mexicana
@@ -326,21 +338,31 @@ UBICACIÓN: Cl. 10 Nte. #14-65, B/Providencia, Armenia, Quindío
 
 TAGLINE: El auténtico sazón mexicano hecho por manos mexicanas.
 
+REFERENTE VISUAL: Cucurrucucu Mexican Cantina (Marguva Casa de Diseño, Mérida 2020).
+Paleta de folclore y fiesta mexicana. Nunca tierra, nunca apagados.
+
 COLORES (usar exactamente estos hex):
   Primarios:
-    - Rojo cantina: #B71C1C (60% del sistema)
-    - Azul talavera: #0D2B4E (20%)
-    - Masa: #F4E3CC (20%)
-  Acentos:
-    - Achiote: #F39200
-    - Tomatillo: #4A7C2A
-    - Guajillo: #6B1E1E
-    - Carbón: #1A1A1A
-  Regla: máximo 3 colores por pieza. Combinaciones válidas: Rojo+Masa, Azul+Achiote, Masa+Carbón, Rojo+Azul+Masa.
+    - Chile rojo: #E53935 (50% del sistema)
+    - Azul cobalto: #1A3FC4 (20%)
+    - Crema viva: #FFFBF0 (30%)
+  Acentos (máximo 20% por pieza):
+    - Magenta fiesta: #D81B60 (acento estrella, bandas de impacto)
+    - Cempasúchil: #FFC107 (texto sobre oscuros, kickers)
+    - Turquesa cantina: #00897B (bebidas, frescura)
+    - Morado talavera: #6A3BA8 (eventos, especiales)
+    - Carbón: #111111 (texto)
+    - Rojo profundo: #8B0000 (fondos noche)
+  Regla: máximo 3 colores por pieza. NUNCA colores tierra o apagados.
+  Combinaciones válidas:
+    - Chile rojo + Crema viva
+    - Azul cobalto + Cempasúchil
+    - Magenta + Crema viva
+    - Morado talavera + Cempasúchil
 
 TIPOGRAFÍA:
-  - Display (rótulo, gritos, logo): Bowlby One 400, 56–96px
-  - Sub-display (nombres de plato, secciones): Anton 400, 20–40px
+  - Display (rótulo, gritos, logo): Bowlby One 400, 56–160px
+  - Sub-display (nombres de plato, secciones): Anton 400, 20–44px
   - Cuerpo (descripciones, web, menú): Archivo 400/500, 14–18px
   - Mano (pizarra, post-it, "del día"): Caveat 600, 18–32px
 
@@ -349,28 +371,30 @@ TONO: Cantina mexicana auténtica, coloquial, directa.
   No: "Bienvenidos a nuestra experiencia", emojis, español neutral
 
 ESTILO VISUAL:
+  - Colores saturados, vivos, festivos — referente folclore mexicano
   - Flat design: sin gradientes, sombras, neón
+  - Fondos sólidos de colores brillantes o crema viva
   - Fotos cenitales, luz natural, fondo limpio
-  - Sin manos visibles del chef (privacidad)
-  - Máximo 5 palabras por frase
   - Whitespace generoso
+  - Máximo 5 palabras por frase en display
 
 LOGOTIPO:
-  - Bowlby One rojo #B71C1C, 96px
-  - Anton "Gastronomía Mexicana" azul #0D2B4E, 12px, tracking abierto
-  - Líneas horizontales azules a ambos lados del descriptor
-  - Fondo: Masa #F4E3CC
+  - Bowlby One chile rojo #E53935, 96px
+  - Anton "Gastronomía Mexicana" azul cobalto #1A3FC4, 12px, tracking abierto
+  - Líneas horizontales cobalto a ambos lados del descriptor
+  - Fondo: Crema viva #FFFBF0
 
 COMPONENTES:
-  - Botón primario: Rojo fondo, Masa texto, Anton, 14px padding 28px
-  - Card menú: Blanco, borde 0.5px, Anton para nombre, Archivo para descripción, monospace para precio
-  - Línea divisora: 2px sólido Rojo o Azul
+  - Botón primario: Chile rojo fondo, Crema texto, Anton, padding 14px 28px
+  - Card menú: blanco, borde izq 4px chile rojo, Anton para nombre, Archivo descripción
+  - Section kicker: Anton 13px, Cempasúchil, líneas 28px a los lados
+  - Banda shout: Chile rojo o Magenta, Bowlby One gigante, Crema
 
 REGLAS CRÍTICAS:
   - Una exclamación por pieza, máximo
   - Nunca fotos con personas
-  - Nunca texto pequeño (<13px) sobre color
-  - Nunca más de 3 colores
+  - Nunca colores tierra, beige, apagados
+  - Nunca más de 3 colores por pieza
   - Nunca decoración sin función
   - Paleta nunca degradada
 ```
@@ -379,13 +403,135 @@ REGLAS CRÍTICAS:
 
 ## 13. Excepciones y Contexto
 
-- **Impresión blanco y negro:** Usar Carbón #1A1A1A para texto, líneas limpias, sin sombras.
-- **Pantalla oscura (redes de noche):** Azul #0D2B4E como fondo, Masa o Achiote como texto.
-- **Señalización física del local:** Mantener paleta igual. Usar serigrafía en colores sólidos.
-- **Material de punto de venta:** Servilletas, vasos, posavasos: una exclamación por pieza en dos colores máximo.
+- **Impresión blanco y negro:** Carbón `#111111` para texto, líneas limpias, sin sombras.
+- **Pantalla oscura (redes de noche):** Azul cobalto o Rojo profundo como fondo, Crema o Cempasúchil como texto.
+- **Señalización física del local:** Mantener paleta igual. Serigrafía en colores sólidos.
+- **Material de punto de venta:** Servilletas, vasos, posavasos: una exclamación por pieza, dos colores máximo.
+
+---
+
+## 14. Patrones de Layout Web — Referente Frenessi + Qué Rico
+
+> Estructura narrativa vertical. Cada sección construye la experiencia antes de mostrar el producto. El scroll se siente como entrar al local.
+
+### Orden canónico de secciones
+
+| # | Sección | Fondo | Función |
+|---|---------|-------|---------|
+| 1 | Header sticky | Crema viva | Navegación |
+| 2 | Hero fullscreen | Foto + overlay oscuro | Impacto, nombre, CTAs |
+| 3 | Statement band | Azul cobalto | Frase filosófica gigante en Bowlby One |
+| 4 | Intro filosófica | Crema viva | 2–3 frases que definen la propuesta de valor, sin fotos |
+| 5 | Category grid 3 col | Rojo / Cobalto / Magenta | Categorías del menú como tarjetas de color sólido |
+| 6 | The Brief | Blanco | Una frase grande centrada que resume todo |
+| 7 | Features 3 bloques | Crema viva | La cocina / El espacio / La reserva |
+| 8 | Galería 2×2 | Sin fondo (fotos full bleed) | Ambiente visual, sin copy |
+| 9 | Menú highlights | Azul cobalto | 6 platos destacados |
+| 10 | Info práctica | Blanco | Dirección, horarios, contacto |
+| 11 | Footer | Azul cobalto | Logo + links |
+
+### Statement Band
+
+Banda de color sólido (azul cobalto o chile rojo). Texto en Bowlby One, tamaño mínimo 60px, máximo 150px. Dos líneas: la primera en crema viva, la segunda en cempasúchil. Sin imagen. Sin padding lateral excesivo — el texto puede acercarse a los bordes. El color y la escala tipográfica son el único diseño.
+
+```
+MANOS MEXICANAS.          ← crema viva
+MESA COLOMBIANA.          ← cempasúchil
+```
+
+### Category Grid (inspirado en tarjetas Cucurrucucu)
+
+Tres columnas sin gap entre ellas. Cada columna es una tarjeta de color sólido distinto:
+- Col 1: Chile rojo `#E53935` — Tacos
+- Col 2: Azul cobalto `#1A3FC4` — Burritos & Quesadillas
+- Col 3: Magenta fiesta `#D81B60` — Cócteles
+
+Dentro de cada tarjeta:
+- Número de categoría en Anton, pequeño, tracking abierto, opacidad 65%
+- Título en Bowlby One 42–68px, texto blanco/crema
+- Descripción en Archivo 16px, opacidad 88%
+- Link en Anton con borde inferior, anclado al fondo de la tarjeta
+
+Altura mínima: 480px en desktop. El contenido queda en la parte superior y el link en la parte inferior.
+
+### The Brief
+
+Sección de respiro total. Fondo blanco. Texto Bowlby One centrado, 38–78px. Máximo 3 líneas. Las palabras clave van en Chile rojo. Sin imagen, sin kicker, sin botón. Solo la frase.
+
+```
+El único chef mexicano
+de formación en Armenia.
+SIN ATAJOS. SIN DECORADO.   ← en rojo
+```
+
+### Features 3 Bloques
+
+Grid de 3 columnas separadas por `1px solid var(--line)`. Fondo crema viva. Cada bloque:
+- Número en Bowlby One 80px, color cempasúchil
+- Título en Anton 26px
+- Párrafo en Archivo 16px, color muted
+- CTA en Anton con borde inferior rojo (solo en el último bloque)
+
+### Galería 2×2
+
+Grid 2 columnas, sin gap, sin padding. Imágenes `aspect-ratio: 4/3`, `object-fit: cover`. Sin texto superpuesto, sin kicker, sin heading. La galería es descanso visual puro entre secciones de texto. Mínimo 4 imágenes.
+
+### Info Práctica 3 Col
+
+Grid 3 columnas. Fondo blanco. Columnas: Dirección / Horarios / Contacto. La dirección en Bowlby One uppercase para que tenga peso visual. Horarios en Archivo. El botón de WhatsApp como CTA final visible.
+
+---
+
+## 15. Ilustración de Ingredientes — Referente Qué Rico
+
+Alternativa al sistema de flores geométricas de Cucurrucucu. Más directa con la cocina.
+
+**Estilo:** cut-out / collage. Formas orgánicas, planas, sin sombras, sin outline. Inspiradas en Matisse y en el diseño folk mexicano contemporáneo.
+
+**Ingredientes ilustrables:** cebolla, pimiento, aguacate, chile, frijoles, hojas de cilantro, tomate, limón, maíz, piña.
+
+**Colores:** magenta, rojo, verde lima, verde oscuro, naranja, azul — nunca en negro, siempre en colores de la paleta sobre fondo azul nocturno o cobalto.
+
+**Usos:**
+- Manteleta impresa — el patrón llega a la mesa
+- Fondo de empaque (bolsas, cajas to-go, vasos)
+- Ventanas del local pintadas o vinilos
+- Fondos de fotografía editorial
+
+**Regla:** Las ilustraciones son el patrón, no la decoración. Se repiten en todas las piezas físicas y crean reconocimiento sin necesidad del logo.
+
+---
+
+## 16. Empaque y Objetos de Marca — Referente Qué Rico
+
+La marca impregna cada objeto físico del local.
+
+| Objeto | Tratamiento |
+|--------|-------------|
+| Vasos de cerveza | Logo grabado en relieve, discreto |
+| Contenedores to-go | Nombre del ingrediente en tipografía gigante que se corta en los bordes: "TACO", "GUAC", "FRIJOL" |
+| Manteleta | Patrón de ilustraciones de ingredientes, fondo azul cobalto o magenta |
+| Servilletas | Una exclamación en Bowlby One: "¡PÁSELE!" o "¡SALUD!" |
+| Bolsa de papel | Logo en crema sobre chile rojo |
+| Caja to-go | "QUÉ RICO" / "BOTANAZO" en azul cobalto sobre crema, tipografía display que ocupa toda la cara |
+
+**Principio Qué Rico:** *"The illustrative pattern brings our to-go boxes and cups alive and vibrant to match the same intensity as the flavor and heat from the menu."*
+
+---
+
+## 17. Fotografía de Mesa — Referente Qué Rico
+
+La superficie de la mesa es un elemento de marca, no un neutro.
+
+- **Mesa azul cobalto** — el color del tablero es parte del diseño
+- **Manteleta ilustrada** siempre presente en fotos de mesa — conecta los platos con la identidad visual
+- **Plano cenital** preferido — muestra la manteleta y los platos como composición gráfica
+- **Objetos de marca en escena** — caja, vaso con logo, servilleta con exclamación
+- Los platos son protagonistas pero la mesa habla por la marca
 
 ---
 
 **Documento generado:** 16 de mayo de 2026  
-**Versión:** 1.0  
+**Versión:** 3.0 — Patrones de layout + Qué Rico + Cucurrucucu completo  
+**Referentes:** Cucurrucucu (Marguva, Mérida 2020) · Qué Rico (Jake Banquer, USA 2025) · Frenessi (estructura narrativa)  
 **Para:** Botanazo — Gastronomía Mexicana
