@@ -22,6 +22,7 @@ if (reviewsSection && reviewsGrid) {
           (review) => `
             <article class="review-card">
               <h3>${review.author}</h3>
+              <p class="review-stars" aria-label="${review.rating} de 5 estrellas">${"★".repeat(review.rating)}</p>
               <p>${review.text}</p>
               <p class="small-note">${review.rating}/5 en Google Maps</p>
             </article>
