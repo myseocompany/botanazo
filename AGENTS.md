@@ -49,6 +49,16 @@ botanazo/
 
 ---
 
+## Horario operativo
+
+**Todos los días de 5:00 p. m. a 10:00 p. m. — miércoles cerrado.**
+
+Vigente desde 2026-06-05. Aplica para mesa y domicilios. Reemplaza el horario anterior (martes a domingo, 12:00 p. m. a 9:00 p. m.).
+
+> Nota: el "Almuerzo Botanazo" (12-3 p. m.) queda sin franja operativa con este horario — pendiente de confirmar con el negocio si se descontinúa o se reubica.
+
+---
+
 ## Menú: categorías principales
 
 - **Tacos** — pastor, carnitas, longaniza, suadero, tripa, birria, campechano, pollo
@@ -57,7 +67,6 @@ botanazo/
 - **Especiales** — chilaquiles, alambre, cazuela de queso, costra de queso
 - **Nachos y dorilocos**
 - **Elotes y esquites**
-- **Almuerzo Botanazo** (12–3 p. m.) — chilaquiles o enchiladas rojas con bebida incluida
 - **Vegetariano** — tacos, quesadilla, nachos, burro, elote, esquite
 - **Bebidas** — bombata, chamoyada, aguas frescas (horchata, jamaica), gaseosas
 - **Cócteles** — margaritas, paloma, charro negro, piña colada, ChamoChela, Seda Azteca
