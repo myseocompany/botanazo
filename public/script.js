@@ -350,6 +350,8 @@ if (deliveryRoot) {
           ? mobileImage("coca-cola-botanazo-armenia.jpg")
           : name === "Quatro"
           ? mobileImage("quatro-botanazo-armenia.jpg")
+          : name === "Bretaña"
+          ? mobileImage("bretana-botanazo-armenia.jpg")
           : name === "ChamoChela"
           ? mobileImage("chamochela-botanazo-menu.jpg")
           : iconImage,
