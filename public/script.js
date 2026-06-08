@@ -1,10 +1,10 @@
 const toggle = document.querySelector("[data-nav-toggle]");
 const links = document.querySelector("[data-nav-links]");
-const imageFallbackSrc = "./assets/images/logo-botanazo-mini.png";
+const imageFallbackSrc = "./assets/images/mobile/logo_botanazo_mini.png";
 
 document.querySelectorAll("img").forEach((img) => {
   img.addEventListener("error", () => {
-    if (img.src.endsWith("/logo-botanazo-mini.png")) return;
+    if (img.src.endsWith("/logo-botanazo-mini.png") || img.src.endsWith("/logo_botanazo_mini.png")) return;
     img.src = imageFallbackSrc;
     img.classList.add("is-icon-fallback");
   });
@@ -68,7 +68,7 @@ if (deliveryRoot) {
 
   const image = (file) => `./assets/images/${file}`;
   const mobileImage = (file) => `./assets/images/mobile/${file.replace(/\.[^.]+$/, "-mobile.jpg")}`;
-  const iconImage = image("logo-botanazo-mini.png");
+  const iconImage = imageFallbackSrc;
 
   const catalog = [
     {
@@ -271,7 +271,7 @@ if (deliveryRoot) {
       category: "Bebidas",
       name: "Bombata",
       description: "Frappé tipo malteada con perlas explosivas.",
-      image: mobileImage("chamochela-hero-botanazo-armenia.jpg"),
+      image: iconImage,
       tags: ["Bebida"],
       optionsLabel: "Tamaño",
       options: [
@@ -287,7 +287,7 @@ if (deliveryRoot) {
       category: "Bebidas",
       name: "Chamoyada",
       description: "Frappé en agua con perlas de sabor decorado con chamoy.",
-      image: mobileImage("chamochela-botanazo-armenia.jpg"),
+      image: iconImage,
       tags: ["Bebida"],
       optionsLabel: "Tamaño",
       options: [
@@ -334,7 +334,7 @@ if (deliveryRoot) {
       category,
       name,
       description: category === "Extras" ? "El sabor se confirma por WhatsApp antes de cerrar el pedido." : tag === "Con alcohol" ? "Debe recibir una persona mayor de edad." : "Bebida para sumar a tu pedido.",
-      image: tag === "Con alcohol" ? mobileImage("margarita-botanazo-armenia.jpg") : mobileImage("chamochela-hero-botanazo-armenia.jpg"),
+      image: name.startsWith("Margarita") ? mobileImage("margarita-botanazo-armenia.jpg") : iconImage,
       tags: [tag],
       price,
       alcohol: tag === "Con alcohol",
@@ -344,7 +344,7 @@ if (deliveryRoot) {
       category: "Cócteles y cervezas",
       name: "Cerveza",
       description: "Coronita, Corona, Sol o Club Dorada.",
-      image: mobileImage("cocteles-mexicanos-botanazo-armenia.jpg"),
+      image: iconImage,
       tags: ["Con alcohol"],
       alcohol: true,
       optionsLabel: "Cerveza",
@@ -360,7 +360,7 @@ if (deliveryRoot) {
       category: "Cócteles y cervezas",
       name: "Michelada tradicional",
       description: "Escarchada con chamoy, tajín y limón.",
-      image: mobileImage("cocteles-mexicanos-botanazo-armenia.jpg"),
+      image: iconImage,
       tags: ["Con alcohol"],
       alcohol: true,
       optionsLabel: "Cerveza",
@@ -375,7 +375,7 @@ if (deliveryRoot) {
       category: "Cócteles y cervezas",
       name: "Michelada mexicana",
       description: "Escarchada con chamoy, tajín y limón.",
-      image: mobileImage("cocteles-mexicanos-botanazo-armenia.jpg"),
+      image: iconImage,
       tags: ["Con alcohol"],
       alcohol: true,
       optionsLabel: "Cerveza",
