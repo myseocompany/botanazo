@@ -312,7 +312,7 @@ if (deliveryRoot) {
       category: "Bebidas",
       name: "Aguas frescas",
       description: "Horchata o jamaica en tamaño chica, mediana o grande.",
-      image: mobileImage("tortilla-maiz-nixtamalizada-botanazo.jpg"),
+      image: mobileImage("aguas-frescas-botanazo-armenia.jpg"),
       tags: ["Bebida"],
       optionsLabel: "Sabor y tamaño",
       options: ["Horchata", "Jamaica"].flatMap((flavor) =>
@@ -345,7 +345,9 @@ if (deliveryRoot) {
       description: category === "Extras" ? "El sabor se confirma por WhatsApp antes de cerrar el pedido." : tag === "Con alcohol" ? "Debe recibir una persona mayor de edad." : "Bebida para sumar a tu pedido.",
       image:
         name.startsWith("Margarita")
-          ? mobileImage("margarita-botanazo-armenia.jpg")
+          ? name === "Margarita fresa"
+            ? mobileImage("margarita-fresa-botanazo-armenia.jpg")
+            : mobileImage("margarita-botanazo-armenia.jpg")
           : name === "Coca-Cola"
           ? mobileImage("coca-cola-botanazo-armenia.jpg")
           : name === "Quatro"
