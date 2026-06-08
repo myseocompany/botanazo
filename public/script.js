@@ -166,7 +166,12 @@ if (deliveryRoot) {
           : name === "Chilaquiles"
           ? "Totopos con salsa roja, crema, cebolla, queso, huevo, carne y cilantro."
           : "Queso fundido con tortillas y guacamole.",
-      image: name === "Chilaquiles" ? mobileImage("chilaquiles-mexicanos-botanazo-armenia.jpg") : iconImage,
+      image:
+        name === "Chilaquiles"
+          ? mobileImage("chilaquiles-mexicanos-botanazo-armenia.jpg")
+          : name === "Alambre"
+          ? mobileImage("alambre-botanazo-armenia.jpg")
+          : mobileImage("cazuela-queso-botanazo-armenia.jpg"),
       tags: ["Especial"],
       optionsLabel: "Carne",
       options:
@@ -239,7 +244,7 @@ if (deliveryRoot) {
       category: "Elotes y esquites",
       name: "Esquite",
       description: "Granos de maíz calientes en vaso con mayonesa, queso, limón y lo que gustes.",
-      image: iconImage,
+      image: mobileImage("esquite-botanazo-armenia.jpg"),
       tags: ["Maíz"],
       optionsLabel: "Tipo",
       options: [
