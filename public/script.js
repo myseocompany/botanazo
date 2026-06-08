@@ -271,7 +271,12 @@ if (deliveryRoot) {
       category: "Vegetariano",
       name,
       description: "Opción vegetariana de Botanazo.",
-      image: name.includes("Elote") || name.includes("Esquite") ? mobileImage("elote-mexicano-botanazo-armenia.jpg") : iconImage,
+      image:
+        name === "Elote vegetariano"
+          ? mobileImage("elote-mexicano-botanazo-armenia.jpg")
+          : name === "Esquite vegetariano"
+          ? mobileImage("esquite-vegetariano-botanazo-armenia.jpg")
+          : iconImage,
       tags: ["Vegetariano"],
       price,
     })),
