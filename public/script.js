@@ -219,7 +219,7 @@ if (deliveryRoot) {
       category: "Nachos y dorilocos",
       name: "Dorilocos",
       description: "Doritos con carne, queso cheddar, salsa de maíz, mozzarella, crema y pico de gallo.",
-      image: iconImage,
+      image: mobileImage("dorilocos-botanazo-armenia.jpg"),
       tags: ["Botana"],
       optionsLabel: "Carne",
       options: [
