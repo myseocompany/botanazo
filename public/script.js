@@ -1,5 +1,14 @@
 const toggle = document.querySelector("[data-nav-toggle]");
 const links = document.querySelector("[data-nav-links]");
+const imageFallbackSrc = "./assets/images/logo-botanazo-mini.png";
+
+document.querySelectorAll("img").forEach((img) => {
+  img.addEventListener("error", () => {
+    if (img.src.endsWith("/logo-botanazo-mini.png")) return;
+    img.src = imageFallbackSrc;
+    img.classList.add("is-icon-fallback");
+  });
+});
 
 if (toggle && links) {
   toggle.addEventListener("click", () => {
@@ -58,6 +67,8 @@ if (deliveryRoot) {
   ];
 
   const image = (file) => `./assets/images/${file}`;
+  const mobileImage = (file) => `./assets/images/mobile/${file.replace(/\.[^.]+$/, "-mobile.jpg")}`;
+  const iconImage = image("logo-botanazo-mini.png");
 
   const catalog = [
     {
@@ -65,7 +76,7 @@ if (deliveryRoot) {
       category: "Tacos",
       name: "Tacos",
       description: "Tacos con cebolla y cilantro. Elige carne y presentación.",
-      image: image("tacos-mexicanos-botanazo-armenia.jpg"),
+      image: mobileImage("tacos-mexicanos-botanazo-armenia.jpg"),
       tags: ["Popular", "Birria"],
       optionsLabel: "Carne y presentación",
       options: [
@@ -108,7 +119,7 @@ if (deliveryRoot) {
       category: "Burritos",
       name: "Burrito",
       description: "Tortilla de harina grande con frijoles refritos, pico de gallo, queso, guacamole y carne.",
-      image: image("burro-mexicano-botanazo-armenia.jpg"),
+      image: mobileImage("burro-mexicano-botanazo-armenia.jpg"),
       tags: ["Llenador"],
       optionsLabel: "Tipo",
       options: [
@@ -124,7 +135,7 @@ if (deliveryRoot) {
       category: "Quesadillas",
       name: "Quesadilla",
       description: "Elige tipo y presentación. Acompañada incluye 2 entre guacamole, crema agria y pico de gallo.",
-      image: image("tortilla-maiz-nixtamalizada-botanazo.jpg"),
+      image: mobileImage("tortilla-maiz-nixtamalizada-botanazo.jpg"),
       tags: ["Para compartir"],
       optionsLabel: "Tipo y presentación",
       options: [
@@ -155,7 +166,7 @@ if (deliveryRoot) {
           : name === "Chilaquiles"
           ? "Totopos con salsa roja, crema, cebolla, queso, huevo, carne y cilantro."
           : "Queso fundido con tortillas y guacamole.",
-      image: name === "Chilaquiles" ? image("chilaquiles-mexicanos-botanazo-armenia.jpg") : image("full.png"),
+      image: name === "Chilaquiles" ? mobileImage("chilaquiles-mexicanos-botanazo-armenia.jpg") : iconImage,
       tags: ["Especial"],
       optionsLabel: "Carne",
       options:
@@ -182,7 +193,7 @@ if (deliveryRoot) {
       category: "Nachos y dorilocos",
       name: "Nachos",
       description: "Totopos con queso fundido, frijoles, pico de gallo, crema, cheddar, carne y jalapeños.",
-      image: image("nachos-mexicanos-botanazo-armenia.jpg"),
+      image: mobileImage("nachos-mexicanos-botanazo-armenia.jpg"),
       tags: ["Para compartir"],
       optionsLabel: "Tipo y tamaño",
       options: [
@@ -201,7 +212,7 @@ if (deliveryRoot) {
       category: "Nachos y dorilocos",
       name: "Dorilocos",
       description: "Doritos con carne, queso cheddar, salsa de maíz, mozzarella, crema y pico de gallo.",
-      image: image("nachos.png"),
+      image: iconImage,
       tags: ["Botana"],
       optionsLabel: "Carne",
       options: [
@@ -215,7 +226,7 @@ if (deliveryRoot) {
       category: "Elotes y esquites",
       name: "Elote",
       description: "Mazorca entera con mayonesa, queso cheddar y Doritos, Takis o carne.",
-      image: image("elote-mexicano-botanazo-armenia.jpg"),
+      image: mobileImage("elote-mexicano-botanazo-armenia.jpg"),
       tags: ["Maíz"],
       optionsLabel: "Tipo",
       options: [
@@ -228,7 +239,7 @@ if (deliveryRoot) {
       category: "Elotes y esquites",
       name: "Esquite",
       description: "Granos de maíz calientes en vaso con mayonesa, queso, limón y lo que gustes.",
-      image: image("elote.png"),
+      image: iconImage,
       tags: ["Maíz"],
       optionsLabel: "Tipo",
       options: [
@@ -251,7 +262,7 @@ if (deliveryRoot) {
       category: "Vegetariano",
       name,
       description: "Opción vegetariana de Botanazo.",
-      image: name.includes("Elote") || name.includes("Esquite") ? image("elote-mexicano-botanazo-armenia.jpg") : image("tortilla.png"),
+      image: name.includes("Elote") || name.includes("Esquite") ? mobileImage("elote-mexicano-botanazo-armenia.jpg") : iconImage,
       tags: ["Vegetariano"],
       price,
     })),
@@ -260,7 +271,7 @@ if (deliveryRoot) {
       category: "Bebidas",
       name: "Bombata",
       description: "Frappé tipo malteada con perlas explosivas.",
-      image: image("chamochela-hero-botanazo-armenia.jpg"),
+      image: mobileImage("chamochela-hero-botanazo-armenia.jpg"),
       tags: ["Bebida"],
       optionsLabel: "Tamaño",
       options: [
@@ -276,7 +287,7 @@ if (deliveryRoot) {
       category: "Bebidas",
       name: "Chamoyada",
       description: "Frappé en agua con perlas de sabor decorado con chamoy.",
-      image: image("chamochela-botanazo-armenia.jpg"),
+      image: mobileImage("chamochela-botanazo-armenia.jpg"),
       tags: ["Bebida"],
       optionsLabel: "Tamaño",
       options: [
@@ -292,7 +303,7 @@ if (deliveryRoot) {
       category: "Bebidas",
       name: "Aguas frescas",
       description: "Horchata o jamaica en tamaño chica, mediana o grande.",
-      image: image("tortilla-maiz-nixtamalizada-botanazo.jpg"),
+      image: mobileImage("tortilla-maiz-nixtamalizada-botanazo.jpg"),
       tags: ["Bebida"],
       optionsLabel: "Sabor y tamaño",
       options: ["Horchata", "Jamaica"].flatMap((flavor) =>
@@ -323,7 +334,7 @@ if (deliveryRoot) {
       category,
       name,
       description: category === "Extras" ? "El sabor se confirma por WhatsApp antes de cerrar el pedido." : tag === "Con alcohol" ? "Debe recibir una persona mayor de edad." : "Bebida para sumar a tu pedido.",
-      image: tag === "Con alcohol" ? image("margarita-botanazo-armenia.jpg") : image("chamochela-hero-botanazo-armenia.jpg"),
+      image: tag === "Con alcohol" ? mobileImage("margarita-botanazo-armenia.jpg") : mobileImage("chamochela-hero-botanazo-armenia.jpg"),
       tags: [tag],
       price,
       alcohol: tag === "Con alcohol",
@@ -333,7 +344,7 @@ if (deliveryRoot) {
       category: "Cócteles y cervezas",
       name: "Cerveza",
       description: "Coronita, Corona, Sol o Club Dorada.",
-      image: image("cocteles-mexicanos-botanazo-armenia.jpg"),
+      image: mobileImage("cocteles-mexicanos-botanazo-armenia.jpg"),
       tags: ["Con alcohol"],
       alcohol: true,
       optionsLabel: "Cerveza",
@@ -349,7 +360,7 @@ if (deliveryRoot) {
       category: "Cócteles y cervezas",
       name: "Michelada tradicional",
       description: "Escarchada con chamoy, tajín y limón.",
-      image: image("cocteles-mexicanos-botanazo-armenia.jpg"),
+      image: mobileImage("cocteles-mexicanos-botanazo-armenia.jpg"),
       tags: ["Con alcohol"],
       alcohol: true,
       optionsLabel: "Cerveza",
@@ -364,7 +375,7 @@ if (deliveryRoot) {
       category: "Cócteles y cervezas",
       name: "Michelada mexicana",
       description: "Escarchada con chamoy, tajín y limón.",
-      image: image("cocteles-mexicanos-botanazo-armenia.jpg"),
+      image: mobileImage("cocteles-mexicanos-botanazo-armenia.jpg"),
       tags: ["Con alcohol"],
       alcohol: true,
       optionsLabel: "Cerveza",
@@ -388,6 +399,7 @@ if (deliveryRoot) {
     grid: document.querySelector("[data-catalog-grid]"),
     empty: document.querySelector("[data-catalog-empty]"),
     tabs: document.querySelector("[data-category-tabs]"),
+    categoryMenuToggle: document.querySelector("[data-category-menu-toggle]"),
     search: document.querySelector("[data-catalog-search]"),
     cartItems: document.querySelector("[data-cart-items]"),
     cartEmpty: document.querySelector("[data-cart-empty]"),
@@ -502,6 +514,12 @@ if (deliveryRoot) {
       state.category = button.dataset.category;
       renderTabs();
       renderCatalog();
+      closeCategoryMenu();
+    });
+
+    els.categoryMenuToggle?.addEventListener("click", () => {
+      const isOpen = els.tabs.classList.toggle("is-open");
+      els.categoryMenuToggle.setAttribute("aria-expanded", String(isOpen));
     });
 
     els.search.addEventListener("input", () => {
@@ -555,9 +573,15 @@ if (deliveryRoot) {
         closeProduct();
         closeCartModal();
         closeCheckout();
+        closeCategoryMenu();
       }
       trapFocus(event);
     });
+  }
+
+  function closeCategoryMenu() {
+    els.tabs.classList.remove("is-open");
+    els.categoryMenuToggle?.setAttribute("aria-expanded", "false");
   }
 
   function openProduct(id, trigger) {
