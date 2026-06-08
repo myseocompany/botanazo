@@ -171,7 +171,9 @@ if (deliveryRoot) {
           ? mobileImage("chilaquiles-mexicanos-botanazo-armenia.jpg")
           : name === "Alambre"
           ? mobileImage("alambre-botanazo-armenia.jpg")
-          : mobileImage("cazuela-queso-botanazo-armenia.jpg"),
+          : name === "Cazuela de queso"
+          ? mobileImage("cazuela-queso-botanazo-armenia.jpg")
+          : iconImage,
       tags: ["Especial"],
       optionsLabel: "Carne",
       options:
