@@ -173,6 +173,8 @@ if (deliveryRoot) {
           ? mobileImage("alambre-botanazo-armenia.jpg")
           : name === "Cazuela de queso"
           ? mobileImage("cazuela-queso-botanazo-armenia.jpg")
+          : name === "Costra de queso"
+          ? mobileImage("costra-queso-botanazo-armenia.jpg")
           : iconImage,
       tags: ["Especial"],
       optionsLabel: "Carne",
@@ -341,7 +343,16 @@ if (deliveryRoot) {
       category,
       name,
       description: category === "Extras" ? "El sabor se confirma por WhatsApp antes de cerrar el pedido." : tag === "Con alcohol" ? "Debe recibir una persona mayor de edad." : "Bebida para sumar a tu pedido.",
-      image: name.startsWith("Margarita") ? mobileImage("margarita-botanazo-armenia.jpg") : iconImage,
+      image:
+        name.startsWith("Margarita")
+          ? mobileImage("margarita-botanazo-armenia.jpg")
+          : name === "Coca-Cola"
+          ? mobileImage("coca-cola-botanazo-armenia.jpg")
+          : name === "Quatro"
+          ? mobileImage("quatro-botanazo-armenia.jpg")
+          : name === "ChamoChela"
+          ? mobileImage("chamochela-botanazo-menu.jpg")
+          : iconImage,
       tags: [tag],
       price,
       alcohol: tag === "Con alcohol",
